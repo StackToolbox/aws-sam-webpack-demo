@@ -12,7 +12,7 @@ module.exports = {
   output: {
     filename: (chunkData) => awsSamPlugin.filename(chunkData),
     libraryTarget: "commonjs2",
-    path: path.resolve(".")
+    path: path.resolve("."),
   },
 
   // Create source maps
@@ -20,7 +20,7 @@ module.exports = {
 
   // Resolve .ts and .js extensions
   resolve: {
-    extensions: [".ts", ".js"]
+    extensions: [".ts", ".js"],
   },
 
   // Target node
@@ -29,16 +29,16 @@ module.exports = {
   // AWS recommends always including the aws-sdk in your Lambda package but excluding can significantly reduce
   // the size of your deployment package. If you want to always include it then comment out this line. It has
   // been included conditionally because the node10.x docker image used by SAM local doesn't include it.
-//   externals: process.env.NODE_ENV === "development" ? [] : ["aws-sdk"],
+  //   externals: process.env.NODE_ENV === "development" ? [] : ["aws-sdk"],
 
   // Set the webpack mode
   mode: process.env.NODE_ENV || "production",
 
   // Add the TypeScript loader
   module: {
-    rules: [{ test: /\.tsx?$/, loader: "ts-loader" }]
+    rules: [{ test: /\.tsx?$/, loader: "ts-loader" }],
   },
 
   // Add the AWS SAM Webpack plugin
-  plugins: [awsSamPlugin]
+  plugins: [awsSamPlugin],
 };
