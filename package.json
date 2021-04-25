@@ -6,19 +6,19 @@
   "author": "Richard Buggy <rich@graphboss.com>",
   "license": "MIT",
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.64",
+    "@types/aws-lambda": "^8.10.75",
     "aws-sam-webpack-plugin": "file:../aws-sam-webpack-plugin",
-    "eslint": "^7.14.0",
-    "eslint-config-airbnb-typescript-prettier": "^4.0.0",
-    "prettier": "^2.2.0",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-typescript-prettier": "^4.2.0",
+    "prettier": "^2.2.1",
     "rimraf": "^3.0.2",
-    "ts-loader": "^8.0.11",
-    "typescript": "^4.1.2",
-    "webpack": "^5.5.0",
-    "webpack-cli": "^4.2.0"
+    "ts-loader": "^9.1.1",
+    "typescript": "^4.2.4",
+    "webpack": "^5.35.1",
+    "webpack-cli": "^4.6.0"
   },
   "dependencies": {
-    "aws-sdk": "^2.794.0"
+    "aws-sdk": "^2.892.0"
   },
   "scripts": {
     "build": "webpack-cli",
