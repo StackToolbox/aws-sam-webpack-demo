@@ -1,5 +1,3 @@
-import "source-map-support/register";
-
 export const handler = async () => {
   console.log(process.version);
   console.log(process.env);
