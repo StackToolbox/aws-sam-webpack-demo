@@ -6,25 +6,25 @@
   "author": "Richard Buggy <rich@graphboss.com>",
   "license": "MIT",
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.75",
+    "@types/aws-lambda": "^8.10.81",
     "aws-sam-webpack-plugin": "file:../aws-sam-webpack-plugin",
-    "eslint": "^7.25.0",
+    "eslint": "^7.31.0",
     "eslint-config-airbnb-typescript-prettier": "^4.2.0",
-    "prettier": "^2.2.1",
+    "prettier": "^2.3.2",
     "rimraf": "^3.0.2",
-    "ts-loader": "^9.1.1",
-    "typescript": "^4.2.4",
-    "webpack": "^5.35.1",
-    "webpack-cli": "^4.6.0"
+    "ts-loader": "^9.2.4",
+    "typescript": "^4.3.5",
+    "webpack": "^5.47.0",
+    "webpack-cli": "^4.7.2"
   },
   "dependencies": {
-    "aws-sdk": "^2.892.0"
+    "aws-sdk": "^2.956.0"
   },
   "scripts": {
     "build": "webpack-cli",
-    "clean": "rimraf .aws-sam .vscode",
-    "prebuild": "rimraf .aws-sam .vscode",
-    "prewatch": "rimraf .aws-sam .vscode",
+    "clean": "node_modules/rimraf/bin.js .aws-sam .vscode",
+    "prebuild": "node_modules/rimraf/bin.js .aws-sam .vscode",
+    "prewatch": "node_modules/rimraf/bin.js .aws-sam .vscode",
     "watch": "webpack-cli -w"
   }
 }
