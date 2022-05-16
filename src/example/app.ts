@@ -4,6 +4,6 @@ export const handler = async () => {
   for (let i = 0; i < 10; i++) {
     console.log("Number %d", i);
   }
-  throw new Error("Ugh!");
+  // throw new Error("Ugh!");
   return { message: "Hello" };
 };

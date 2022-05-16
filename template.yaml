@@ -6,7 +6,29 @@ Resources:
     Properties:
       CodeUri: src/example
       Handler: app.handler
-      Runtime: nodejs14.x
+      Runtime: nodejs16.x
+      MemorySize: 256
+      Environment:
+        Variables:
+          NODE_OPTIONS: --enable-source-maps
+
+  MyFunction1:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: src/example
+      Handler: app.handler
+      Runtime: nodejs16.x
+      MemorySize: 256
+      Environment:
+        Variables:
+          NODE_OPTIONS: --enable-source-maps
+
+  MyFunction2:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: src/example
+      Handler: app.handler
+      Runtime: nodejs16.x
       MemorySize: 256
       Environment:
         Variables:
