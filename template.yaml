@@ -6,7 +6,7 @@ Resources:
     Properties:
       CodeUri: src/example
       Handler: app.handler
-      Runtime: nodejs16.x
+      Runtime: nodejs18.x
       MemorySize: 256
       Environment:
         Variables:
@@ -17,7 +17,7 @@ Resources:
     Properties:
       CodeUri: src/example
       Handler: app.handler
-      Runtime: nodejs16.x
+      Runtime: nodejs18.x
       MemorySize: 256
       Environment:
         Variables:
@@ -28,7 +28,7 @@ Resources:
     Properties:
       CodeUri: src/example
       Handler: app.handler
-      Runtime: nodejs16.x
+      Runtime: nodejs18.x
       MemorySize: 256
       Environment:
         Variables:
